@@ -1,0 +1,46 @@
+Installing Git on:
+
+Windows
+use msysGit (http://msysgit.github.com)
+
+Mac OSX
+brew install git
+
+Linux
+sudo apt-get install git-core
+
+=============
+Configuring git:
+
+System level configuration:
+->git config --system
+->stored in c:\Program files(x86)\Git\etc\gitconfig on windows
+
+User level configuration:
+->git config --global
+->stored in c:\users\<name>\.gitconfig on windows
+
+Repository level configuration:
+->git config
+->stored in .git/config in each repo
+
+-----some git config options on terminal:
+->git config --global user.name "Adhish"
+->git config --global user.email "adi@gmail.com"
+->git config --global --list                              //user.name=Adhish
+                                                          //user.email=adi@gmail.com
+->cat ~/.gitconfig                                        //[user]
+                                                                  name=Adhish
+                                                                  email=adi@gmail.com
+->git config --global core.editor vim
+->git config --global help.autocorrect 1                  //config option that helps to autocorrect the spelling of some command
+->git statsu                                              //NOTE: status misspelled 
+                                                          //continuing under the assumption that you meant "status"
+->git config --global color.ui auto                                                                  
+->git config --global core.autocrlf true|false|input      //can be any of these 3 values
+->git config --global --list                              //user.name=Adhish
+                                                          //user.email=adi@gmail.com
+                                                          //core.editor=vim
+                                                          //core.autocrlf=input
+                                                          //help.autocorrect=1
+                                                          //color.ui=auto
