@@ -1,0 +1,21 @@
+->git status       //On branch master, 
+                   //temp1.txt
+                   //temp2.txt
+
+->git clean -n     //would remove temp1.txt
+                   //would remove temp2.txt
+->git clean -f     //removing temp1.txt       
+                   //removing temp2.txt
+->git status       //On branch master, nothing to commit
+
+==============
+Ignoring files with .gitignore
+
+->mkdir logs
+->touch logs/log.txt          //creating file in logs directory
+->vim .gitignore              
+->git status                  //On branch master,
+                              //.gitignore
+->git add .gitignore
+-> git commit -m "Added gitignore"
+->git status                       //On branch master, nothing to commit
