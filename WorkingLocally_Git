@@ -19,3 +19,35 @@ Ignoring files with .gitignore
 ->git add .gitignore
 -> git commit -m "Added gitignore"
 ->git status                       //On branch master, nothing to commit
+
+===================
+Saving and sharing code with Git
+->Saving and sharing versions of code with your team are the most common things you do when using version control.
+Git has an easy three step workflow for these tasks:
+
+1.Create a new branch for your work
+2.Commit your changes
+3.Push the branch to share it with your team
+
+Create a branch
+It’s a good idea to check which branch you’re on using git status before creating a new branch.
+Create branches in Git using the git branch command:
+> git branch <branchname>
+
+The command to swap between branches in your repo is git checkout. 
+After creating your branch, you’ll need to switch to it before you can save changes on your branch.
+> git checkout <branchname>
+
+Git has a shorthand command to create the branch and the swap to it at the same time:
+> git checkout -b <branchname>
+
+Commit your changes
+Stage your changes with 
+> git add to add changed files, 
+> git rm to remove files, and 
+> git mv to move files. 
+Then use git commit command to create the commit.
+
+Share your changes
+Use the git push command to take commits from your local repo and write them into a remote repo. 
+> git push origin
