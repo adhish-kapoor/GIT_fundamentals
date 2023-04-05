@@ -1,1 +1,23 @@
-Q1 
+Q1  What is the meaning of “Index” or “Staging Area” in GIT?
+- When we are making the commits, we can make changes to it, format it and review it in the intermediate area known as ‘Staging Area’ or ‘Index’.
+
+Q2 What is the use of a Git clone?
+- The Git clone command lets us copy the existing Git repository. 
+If we want to get a copy of the central repository then the best way to do it is using ‘cloning’.
+
+Q3 What is the difference between git fetch and git pull?
+- Git fetch retrieves new data from a remote repository but does not integrate it into our working files. 
+It helps in checking if any changes happened in the remote repository. 
+It does not manipulate or destroy anything in the process.
+
+Git pull, on the other hand, updates the HEAD with the latest changes from the remote server and directly integrates it into the working copy files. 
+Using git pull can end in merge conflict as it tries to merge remote changes with the local ones.
+
+Q4 What is revert in Git?
+- The git revert command is a forward-moving undo operation. 
+It is a safe way to undo changes as it will create a new commit that inverses the changes instead of deleting or orphaning commits in the commit history.
+
+Q5 What is GIT stash?
+- The Git stash will take the working directory in the current state and index it to put on the stack at a later stage so that what we get is a clean working directory.
+This means that if we are in the middle of some task and need to get a clean working directory and simultaneously we want to keep all our current edits, then we can use the Git stash.
+
